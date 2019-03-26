@@ -13,9 +13,6 @@ a{
   text-decoration: none;
 }
 
-header{
-  position: relative;
-}
 /*CODICE DELLA BARRA FIXED*/
 .top_header{
   width:100vw;
@@ -126,13 +123,11 @@ header{
 }
 
 .slider_content{
-  width: 25%;
+  width: 45%;
   float: left;
   color: white;
-  float: left;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 80PX;
+  /* transform: translateY(-50%); */
 }
 
 .slider_content h1,
@@ -181,7 +176,7 @@ main{
 }
 
 .container_cube{
-  padding-top: 100px;
+  padding: 100px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -198,12 +193,12 @@ main{
   margin: 0 140px 0 140px;
 }
 
+/*CODICE DELLE COLONNE CENTRALI*/
 /*sezione relativa a blocchi interni powerblock*/
 .power_block{
   background-color: white;
   box-shadow: 0px 0px 5px 5px #eaf0f6;
   padding: 20px;
-  position: relative;
   transition: transform .2s; /* Animation */
 }
 
@@ -220,11 +215,11 @@ main{
 
 
 /*definisco dimensione blocco testo e lista*/
-.list_power{
+/* .list_power{
   width: 60%;
   float:right;
   padding: 30px;
-}
+} */
 
 .list_power ul, .list_power2 ul{
   list-style-type: none;
@@ -246,10 +241,23 @@ main{
   clear: both;
 }
 
+.container::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+
 .item_power2{
   width: calc((100% / 3) - (80px / 3));
   float: left;
   margin-top: 20px;
+}
+
+.item_power2::after{
+  display: table;
+  content:'';
+  clear: both;
 }
 
 .item_power2 img{
@@ -266,8 +274,34 @@ main{
   text-align: center;
 }
 
-main::after{
-  display: table;
-  content: '';
-  clear: left;
+
+/*CODICE DELLA GRIGLIA*/
+.griglia{
+  background-color: #02BCA6;
+  padding:50px;
+  margin: 80px 0 80px 0;
+
+}
+
+.elemento_griglia{
+  float:left;
+  display: inline-block;
+  width: calc(100% /4);
+  color: white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 50px;
+}
+
+.elemento_griglia span,
+.elemento_griglia h2,
+.elemento_griglia p
+{
+  display: block;
+  text-align: center;
+}
+
+/*nasconde il bordo della griglia inferiore */
+.elemento_griglia:nth-child(n + 5) {
+    border-bottom: 0;
 }
