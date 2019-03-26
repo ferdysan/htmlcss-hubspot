@@ -217,6 +217,8 @@ main{
 .img_power img{
   display: block;
 }
+
+
 /*definisco dimensione blocco testo e lista*/
 .list_power{
   width: 60%;
@@ -224,7 +226,7 @@ main{
   padding: 30px;
 }
 
-.list_power ul{
+.list_power ul, .list_power2 ul{
   list-style-type: none;
 }
 
@@ -245,11 +247,23 @@ main{
 }
 
 .item_power2{
+  width: calc((100% / 3) - (80px / 3));
   float: left;
-  width: 30%;
-  border: 1px solid black;
-  height: 400px;
   margin-top: 20px;
+}
+
+.item_power2 img{
+  display: block;
+}
+
+.item_center{
+  margin: 20px 40px 0 40px ;
+}
+
+.list_power2 a{
+  display: block;
+  width: 50%;
+  text-align: center;
 }
 
 main::after{
