@@ -1,0 +1,234 @@
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*attribuisco un font al sito*/
+*{
+  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  position: relative;
+}
+/*CODICE DELLA BARRA FIXED*/
+.top_header{
+  width:100vw;
+  padding: 30px;
+  background-color: #f5f8fa;
+  border-bottom: 1px solid #cbd6e2;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.menu_fixed{
+  width: 60vw;
+}
+
+/*do il display inline block agli elementi del menu fixed*/
+.link_lang, .login ul li{
+  display: inline-block;
+}
+
+/*assegno un float per distanziare gli elementi del menu*/
+.login{
+  float: right;
+}
+
+.link_lang a, .item_menu .fa-sort-down{
+  text-decoration: none;
+  color: #33475B;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 10px 0 10px;
+}
+
+.item_menu{
+  margin-right: 10px;
+  border-right: 2px solid #cbd6e2;
+}
+
+.login ul li:not(:last-child){
+  margin-right: 15px;
+}
+
+.login ul li #log_style{
+  padding: 10px 10px 10px 10px;
+  color: #ff7a59;
+  border-radius: 4px;
+}
+
+.hubspot_free {
+  background-color: #ff7a59;
+  padding: 12px 12px 12px 12px;
+  color: white;
+  border-radius: 4px;
+}
+
+.login_button a{
+  background-color: white;
+  border: 2px solid #ff7a59;
+}
+
+.top_header::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/* CODICE RELATIVO AL MENU DI NAVIGAZIONE E LOGO*/
+.menu_nav{
+  width:60vw;
+  margin-top: 100px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.logo{
+  width: 100px;
+  float: left;
+}
+
+.menu_nav nav ul li{
+  display: inline-block;
+  float: right;
+  padding: 10px;
+}
+
+.item_nav a{
+  text-decoration: none;
+  color: #33475B;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dropdown a{
+  margin-right: 10px;
+}
+
+.logo, .menu_nav{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+/*SLIDER*/
+.slider{
+  background-color: #00A0BA;
+  width: 100vw;
+  height: 500px;
+}
+
+.slider_blox{
+  width:60vw;
+}
+
+.slider_content{
+  width: 25vw;
+  float: left;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.slider_content h1,
+.slider_content p,
+.slider_content a{
+  padding: 10px;
+}
+
+.slider_content h1{
+  font-size: 50px;
+}
+
+.slider_content p{
+  letter-spacing: 1px;
+}
+
+.slider_content a{
+  color: #33475B;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.notice{
+  font-size: 9px;
+  color: #ddd;
+  letter-spacing: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.slider_content a::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* CODICE MAIN */
+
+main{
+  background-color: #F5F8FA;
+}
+
+.container_cube{
+  width: 60vw;
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container_cube img{
+  width:260px;
+  display: block;
+  padding: 20px;
+}
+
+.container_cube h2, .container_cube p{
+  padding: 15px;
+  color: #33475B;
+  margin: 0 140px 0 140px;
+}
+
+/*sezione relativa a blocchi interni powerblock*/
+.power_block{
+  width: 60vw;
+  background-color: white;
+  box-shadow: 0px 0px 5px 5px #eaf0f6;
+  padding: 20px;
+  position: relative;
+}
+
+.img_power{
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+.img_power img{
+  display: block;
+}
+
+.list_power{
+  width: 60%;
+  float:right;
+  padding: 20px;
+}
+
+
+.power_block::after{
+  display: table;
+  content: '';
+  clear: both;
+}
