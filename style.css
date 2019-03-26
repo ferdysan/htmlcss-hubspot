@@ -27,7 +27,7 @@ header{
   z-index: 1;
 }
 
-.menu_fixed{
+.container{
   width: 60vw;
 }
 
@@ -125,22 +125,20 @@ header{
   height: 500px;
 }
 
-.slider_blox{
-  width:60vw;
-}
-
 .slider_content{
-  width: 25vw;
+  width: 25%;
   float: left;
   color: white;
-  padding: 10px;
-  margin-top: 30px;
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .slider_content h1,
 .slider_content p,
 .slider_content a{
-  padding: 10px;
+margin-bottom:10px;
 }
 
 .slider_content h1{
@@ -183,7 +181,6 @@ main{
 }
 
 .container_cube{
-  width: 60vw;
   padding-top: 100px;
   text-align: center;
   margin-bottom: 30px;
@@ -203,13 +200,14 @@ main{
 
 /*sezione relativa a blocchi interni powerblock*/
 .power_block{
-  width: 60vw;
   background-color: white;
   box-shadow: 0px 0px 5px 5px #eaf0f6;
   padding: 20px;
   position: relative;
+  transition: transform .2s; /* Animation */
 }
 
+/*definisco dimensione blocco immagine*/
 .img_power{
   width: 40%;
   float: left;
@@ -219,16 +217,43 @@ main{
 .img_power img{
   display: block;
 }
-
+/*definisco dimensione blocco testo e lista*/
 .list_power{
   width: 60%;
   float:right;
-  padding: 20px;
+  padding: 30px;
 }
 
+.list_power ul{
+  list-style-type: none;
+}
+
+.list_power ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.power_block:hover{
+  box-shadow: 0px 0px 15px 10px #eaf0f6;
+  transform: scale(1.1); /* Animation */
+}
 
 .power_block::after{
   display: table;
   content: '';
   clear: both;
+}
+
+.item_power2{
+  float: left;
+  width: 30%;
+  border: 1px solid black;
+  height: 400px;
+  margin-top: 20px;
+}
+
+main::after{
+  display: table;
+  content: '';
+  clear: left;
 }
