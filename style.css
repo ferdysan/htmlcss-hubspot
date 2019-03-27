@@ -117,7 +117,7 @@ a{
 
 /*SLIDER*/
 .slider{
-  background-color: #00A0BA;
+  background-image: linear-gradient(to bottom right, #00A0BA, #02BDA6);
   width: 100vw;
   height: 500px;
 }
@@ -213,9 +213,41 @@ main{
   display: block;
 }
 
+.fa-check-circle{
+  color: orange;
+  margin-right: 10px;
+}
 
-.list_power ul, .list_power2 ul{
+.list_power h4,
+.list_power p,
+.list_power a{
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.list_power span:after{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 2px;
+  background-color: black
+}
+
+.list_power2 h4,
+.list_power2 p,
+.list_power2 a{
+  padding: 20px;
+  text-align: center;
+}
+
+.list_power2 p{
+  border-bottom: 1px solid black;
+}
+
+.list_power ul li, .list_power2 ul li{
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .list_power ul li{
@@ -270,7 +302,7 @@ main{
 
 /*CODICE DELLA GRIGLIA*/
 .griglia{
-  background-color: #02BCA6;
+  background-image: linear-gradient(to bottom right, #00A0BA, #F2547D);
   padding:50px;
   margin: 80px 0 80px 0;
 
@@ -381,7 +413,7 @@ footer{
 
 .footer_widget{
   width: calc((100%/4)-20px);
-  padding:20px;
+  padding:100px 20px 20px 20px;
   float: left;
 }
 
@@ -410,8 +442,8 @@ footer{
   background-color: white;
   text-align: center;
   color: black;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .social_icon li{
@@ -439,6 +471,7 @@ footer{
 .footer_lang{
   padding: 100px 0 100px 0;
   text-align: center;
+  border-bottom: 1px solid #CBD6E2;
 }
 
 /*BOTTOM FOOTER*/
@@ -449,13 +482,21 @@ footer{
 
 .logo_footer{
   float: left;
+  color: #CBD6E2;
+}
+
+.logo_footer img{
+  width: 150px;
+}
+
+.footer_bottom{
+  padding:50px 0 70px 0;
 }
 
 .privacy ul li{
   display: inline-block;
   margin-right: 10px;
   float:right;
-
 }
 
 .privacy ul li a{
@@ -465,4 +506,11 @@ footer{
 
 .privacy{
   float: right;
+}
+
+.privacy::after,
+.logo_footer{
+  clear: both;
+  content:'';
+  display: table;
 }
