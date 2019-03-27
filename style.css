@@ -422,6 +422,19 @@ footer{
 
 .footer_lang ul li{
   display: inline-block;
-
-
+  margin-right: 20px;
 }
+
+.footer_lang ul li a{
+  color: white;
+  font-weight: bold;
+}
+
+.footer_lang{
+  padding-top: 100px;
+  text-align: center;
+}
+
+
+
+/*BOTTOM FOOTER*/
