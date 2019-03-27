@@ -286,6 +286,12 @@ main{
   padding: 50px;
 }
 
+.elemento_griglia::after{
+  display: table;
+  content: '';
+  clear: left;
+}
+
 .elemento_griglia span,
 .elemento_griglia h2,
 .elemento_griglia p
@@ -431,10 +437,32 @@ footer{
 }
 
 .footer_lang{
-  padding-top: 100px;
+  padding: 100px 0 100px 0;
   text-align: center;
 }
 
-
-
 /*BOTTOM FOOTER*/
+
+.logo_footer, .privacy{
+  width: 50%;
+}
+
+.logo_footer{
+  float: left;
+}
+
+.privacy ul li{
+  display: inline-block;
+  margin-right: 10px;
+  float:right;
+
+}
+
+.privacy ul li a{
+  color: white;
+  font-weight: bold;
+}
+
+.privacy{
+  float: right;
+}
