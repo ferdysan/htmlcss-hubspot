@@ -214,13 +214,6 @@ main{
 }
 
 
-/*definisco dimensione blocco testo e lista*/
-/* .list_power{
-  width: 60%;
-  float:right;
-  padding: 30px;
-} */
-
 .list_power ul, .list_power2 ul{
   list-style-type: none;
 }
@@ -301,7 +294,134 @@ main{
   text-align: center;
 }
 
-/*nasconde il bordo della griglia inferiore */
+/*nasconde il bordo della griglia inferiore e  il bordo destro del 4 elemento*/
 .elemento_griglia:nth-child(n + 5) {
     border-bottom: 0;
+}
+
+.elemento_griglia:nth-child(4n){
+  border-right: 0;
+}
+
+/*CODICE PREFOOTER*/
+.prefooter_col_1{
+  width:30%;
+  float: left;
+}
+
+.prefooter_col_2{
+  width:70%;
+  float: left;
+  padding-bottom: 100px;
+}
+
+.prefooter_col_2 img{
+  float: left;
+  display:block;
+  width: calc((100% /4)-20px);
+  margin: 20px;
+}
+
+.prefooter_col_1::after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.prefooter_col_2::after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+/* MODIFICA STAT GROWING*/
+#color_growing{
+  color: black;
+}
+#color_growing a{
+  background-color: #ff7a59;
+  padding: 12px 12px 12px 12px;
+  color: white;
+  border-radius: 4px;
+}
+
+.image_container{
+  width: 50%;
+  float: right;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image_container::after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.image_container img{
+  background-color: pink;
+}
+
+.prefooter{
+  padding-bottom: 100px;
+}
+
+/*INIZIO CODICE FOOTER*/
+footer{
+  background-color: #33475B;
+}
+
+.footer_widget{
+  width: calc((100%/4)-20px);
+  padding:20px;
+  float: left;
+}
+
+.footer_widget::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.footer_widget h2{
+  color: white;
+}
+
+.footer_widget ul li{
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.footer_widget ul li a{
+  color: white;
+}
+
+.support_button{
+  display: block;
+  margin: 10px 0 10px 0;
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.social_icon li{
+  display: inline-block;
+  margin-right: 10px;
+  color: #CBD6E2;
+}
+
+.social_icon a:hover{
+  color:#0091ae;
+}
+
+/* STILE BARRA DELLA LINGUA*/
+
+.footer_lang ul li{
+  display: inline-block;
+
+
 }
